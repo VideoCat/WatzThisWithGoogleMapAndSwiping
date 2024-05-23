@@ -127,21 +127,17 @@
         }
     }
     
+ var swipedElement = document.getElementById(triggerElementID);
     function processingRoutine() {
-        var swipedElement = document.getElementById(triggerElementID);
-        if ( swipeDirection == 'left' ) {
-            // REPLACE WITH YOUR ROUTINES
-            swipedElement.style.backgroundColor = 'orange';
-        } else if ( swipeDirection == 'right' ) {
-            // REPLACE WITH YOUR ROUTINES
-            swipedElement.style.backgroundColor = 'green';
-        } else if ( swipeDirection == 'up' ) {
-            // REPLACE WITH YOUR ROUTINES
-            swipedElement.style.backgroundColor = 'maroon';
-        } else if ( swipeDirection == 'down' ) {
-            // REPLACE WITH YOUR ROUTINES
-            swipedElement.style.backgroundColor = 'purple';
-        }
+      if ( swipeDirection == 'left' ) {
+          window.frames.ghost.location.href = 'animated_ghost_reverse.svg';
+      } else if ( swipeDirection == 'right' ) {
+          window.frames.ghost.location.href = 'animated_ghost.svg';
+      } else if ( swipeDirection == 'up' ) {
+          alert('up');
+      } else if ( swipeDirection == 'down' ) {
+          alert('down');
+      }
     }
 
 </script>
